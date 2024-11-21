@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.left {
+    background-color: #000b42;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+.left-content {
+    padding: 60px ;
+    text-align: center;
+    background-color: #000b42;
+    color: white;
+    border-radius: 10px;
+}
+
+.left-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+
+.left-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.left-content .button {
+    background-color: #E67D01;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+
+}
+
+.left-content .button:hover {
+    background-color: #d96500;}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 70vh;
+    padding: 40px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.right-content h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #ff7f00;
+}
+
+.right-content .social-login {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+  }
+
+  .right-content .social-login .icon {
+    font-size: 2em;
+    cursor: pointer;
+    color: #000b42;
+  }
+
+  .right-content .input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right-content p{
+    color: #000b42;
+  }
+
+  .right-content .input-group label {
+    margin-bottom: 5px;
+    color: #000b42;
+  }
+
+  .right-content .input-group input {
+    padding: 10px;
+    border: 1px solid #000b42;
+    border-radius: 15px;
+    width: 100%;
+  }
+
+  .right-content .input-group input:focus {
+    outline: none;
+    border: 1px solid #E67D01;
+  }
+
+  .right-content .forgot-password {
+    font-size: 0.9em;
+    color: #000b42;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .right-content .login-button {
+    background-color: #E67D01;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .right-content .login-button:hover {
+    opacity: 0.8;
+  }
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left,
+    .right {
+        width: 90%;
+        
+        max-width: 500px;
+       
+        margin-bottom: 30px;
+       
+    }
+}

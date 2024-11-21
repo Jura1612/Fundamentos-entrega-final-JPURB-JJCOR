@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar perfil</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Profile.css">
+</head>
+<body>
+    
+    <div class="left-panel">
+        <button class="logout-btn" onclick="window.location.href='landing.html'">Cerrar sesión</button>
+    </div>
+    
+    <div class="right-panel">
+        <h1>Editar perfil</h1>
+        <div class="form-group">
+            <label>Foto</label>
+            <div class="profile-pic">
+                <img alt="Profile picture placeholder" src="https://www.w3schools.com/howto/img_avatar.png" />
+                <button>Cambiar</button>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Nombre</label>
+            <input id="name" placeholder="Nombre" type="text" />
+        </div>
+        <div class="form-group">
+            <label>Correo asociado</label>
+            <input id="email" placeholder="Correo" type="email" disabled />
+        </div>
+        <div class="form-group">
+            <label>Contraseña actual</label>
+            <input id="current-password" placeholder="Contraseña actual" type="password" />
+        </div>
+        <div class="form-group">
+            <label>Nueva contraseña</label>
+            <input id="new-password" placeholder="Ingresa tu nueva contraseña" type="password" />
+        </div>
+        <div class="buttons">
+            <button class="reset" onclick="resetProfile()">Reestablecer</button>
+            <button class="save" onclick="saveProfile()">Guardar</button>
+        </div>
+    </div>
+
+   
+    <script src="Profile.js"></script>
+</body>
+</html>

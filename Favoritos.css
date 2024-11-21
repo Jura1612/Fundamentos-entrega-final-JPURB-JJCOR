@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    position: sticky; 
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh; 
+    background-color: #000B42;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .content {
+    margin-left: 220px; 
+    padding: 20px;
+  }
+
+.sidebar h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #E67D01;
+    padding-left: 20px;
+}
+
+ul p{
+    color: #E67D01;
+    padding-left: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    color: #848DB8;
+}
+
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar li a {
+    color: #848DB8;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.sidebar li a:hover{
+    color: #E67D01;
+}
+
+.sidebar li a img {
+    width: 20px;
+    height: 20px;
+}
+
+.category {
+    margin-top: 20px;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category li {
+    margin-bottom: 5px;
+}
+
+.category li a {
+    color: #848DB8;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search img {
+    width: 20px;
+    height: 20px;
+}
+
+.search input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.product-banner {
+    background-color: #000B42;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.product-banner .banner-content {
+    flex-direction: column;
+}
+
+.product-banner .banner-image {
+    flex-shrink: 0;
+}
+
+.product-banner h2 {
+    margin-top: 0;
+}
+.banner-image{
+    padding-left: 10%;
+}
+
+.product-banner button {
+    background-color: #E67D01;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-banner button:hover{
+background-color: #be6a0a;
+}
+
+.product-banner-img {
+    background-color: #535353;
+    color: #fff;  
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+   background-image: url(pikaso_texttoimage_Zapatos-asics.png);
+   background-blend-mode: soft-light;
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+}
+
+.product-banner-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filters button {
+    background-color: #000B42;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters :hover {
+    background-color: #E67D01;
+    color: #fff;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .product h3 {
+    margin-top: 0;
+  }
+  
+  .product p {
+    margin-bottom: 5px;
+  }
+  
+  .product .price {
+    font-weight: bold;
+  }
+  
+  .product button {
+    background-color: #E67D01;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product button:hover {
+    background-color: #be6a0a;
+  }
+  
+  .product .fa-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #E67D01;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }

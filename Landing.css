@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000B42;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    padding: 10px 25px;
+    background-color: #E67D01;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.nav-btn:hover {
+    background-color: #848DB7;
+}
+
+.bordered-btn {
+    border: 2px solid #000B42; 
+    background-color: white;
+    color: #000B42;
+}
+
+.bordered-btn:hover {
+    background-color: #000B42;
+    color: white;
+}
+
+nav a:hover {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+h1 {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    color: #E67D01;
+    font-size: 65px;
+    margin-top: 65px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    color: #848DB7;
+    font-size: 23px;
+    margin-bottom: 96px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: normal; 
+    margin-bottom: 100px;
+}
+
+h3 {
+    color: #848DB7;
+    font-size: 30px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300; 
+}
+
+.jugadoras  img{
+    width: 100%;
+    display: flex;
+}
+
+.Fondo {
+    width: 100vw;
+    padding-left: 0%;
+}
+
+
+.image-section {
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000B42;
+    color: white; 
+}
+
+.title {
+    flex: 1;
+    font-size: 30px;
+    color: #848DB7;
+    margin-left: 30px;
+}
+
+.image-container {
+    display: flex;
+    flex: 4;
+    justify-content: space-around;
+}
+
+.image-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.image-item p.description {
+    font-size: 30px;
+    margin: 0;
+}
+
+
+.text-image-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.text-content h1,
+.text-content h2,
+.text-content h3 {
+    margin: 20px 0; 
+    text-align: left; 
+    margin-top: 80px;
+}
+
+.text-content h1{
+    text-align: left;
+}
+.text-content h3{
+    font-size: 27px;
+    color: #000B42;
+}
+.text-content h2{
+    font-size: 30px;
+    color: #000B42;
+}
+
+.images-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative;
+}
+
+.image-left {
+    width: 279px;
+    height: 481px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 70px;
+}
+
+.image-right {
+    width: 279px;
+    height: 482px;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    bottom: -310px; 
+    margin-right: 70px;
+}
+
+
+.info-section {
+    background-color: #000B42;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 230px;
+}
+
+.info-item {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+    padding: 0 20px; 
+    color: #848DB7;
+    font-weight: bold;
+}
+
+.info-item h3 {
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 65px;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 26px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300; 
+}
+
+.about-us-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.about-us-section .text-content {
+    flex: 2;
+    margin-right: 20px; 
+    text-align: left; 
+}
+
+.about-us-section h3 {
+    font-size: 27px;
+    color: #848DB7;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300; 
+    margin-bottom: 10px;
+}
+.text-content{
+    text-align: left;
+}
+.about-us-section h1 {
+    font-size: 55px;
+    display: flex;
+    color: #E67D01;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.about-us-section h2 {
+    font-size: 30px;
+    color: #000B42;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: normal; 
+    line-height: 1.5;
+    max-width: 600px;
+    text-align: left; 
+}
+
+.about-us-section .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-section .about-image {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+}
+
+.highlighted-products-section {
+    position: relative;
+    background-image: url('./fondo\ para\ hacer\ slash.png');
+    background-size: cover;
+    background-position: center;
+    height: 900px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 90px;
+}
+
+.highlighted-content {
+    background-color: #000B42;
+    border-radius: 20px; 
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; 
+    color:#E67D01; 
+    display: inline-block; 
+}
+
+
+.highlighted-content:hover {
+    background-color:#E67D01; 
+    color: #000B42; 
+}
+
+.highlighted-content h2 {
+    font-size: 30px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.service-section {
+    padding: 40px;
+    background-image: url('./FONDO 5 PAGINA.png'); 
+    background-size: cover; 
+    background-position: center; 
+    text-align: left; 
+    color: white; 
+}
+
+.service-section h3 {
+    font-size: 27px;
+    color: #E67D01;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.service-section h1 {
+    font-size: 35px;
+    color: #848DB7;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold; 
+    margin-bottom: 60px;
+    text-align: right;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #000B42;
+    border: 3px solid #E67D01; 
+    border-radius: 10px; 
+    padding: 20px;
+    width: 300px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left; 
+    position: relative;
+}
+
+.service-card img {
+    width: 40px; 
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.service-card h2 {
+    font-size: 24px; 
+    color: #E67D01;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.service-card p {
+    font-size: 18px; 
+    color: #E67D01; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: normal; 
+    margin: 0;
+}
+
+.service-card h1 {
+    font-size: 18px; 
+    color: #E67D01; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: normal; 
+    margin: 0;
+}
+footer {
+    background-color: white;
+    color: #E67D01;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 2200px;
+    margin-bottom: 20px;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left h2 {
+    font-size: 24px;
+    margin: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.footer-left h3 a {
+    color: #E67D01;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    margin: 0;
+    color: #E67D01;
+    text-align: right;
+}
+
+.contact-info h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #000B42;
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+}
+
+.footer-bottom h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #E67D01;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 64px;
+    height: 64px;
+}

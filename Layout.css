@@ -1,0 +1,266 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: #000B42;
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar h1 {
+    font-size: 1.8em;
+    color: #E67D01;
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    color: #E67D01;
+    padding-left: 15px;
+    margin: 15px 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    color: #848DB8;
+}
+
+.sidebar ul p {
+    color: #E67D01;
+    padding-left: 15px;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar li a {
+    color: #848DB8;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar li a:hover {
+    color: #E67D01;
+    background-color: #1a1a3f;
+}
+
+
+.main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f9;
+    overflow: auto;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1;
+    font-size: 1em;
+    transition: border 0.3s;
+}
+
+.search input:focus {
+    border-color: #E67D01;
+}
+
+
+.product-banner {
+    background-color: #000B42;
+    color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.product-banner .banner-content {
+    flex: 1;
+}
+
+.product-banner h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.product-banner button {
+    background-color: #E67D01;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-banner button:hover {
+    background-color: #be6a0a;
+}
+
+
+.product-banner-img {
+    background-color: #535353;
+    color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    background-image: url(./pikaso_texttoimage_Candid-image-photography-natural-textures-highly-r.png);
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    background-color: #000B42;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filters button:hover {
+    background-color: #E67D01;
+    color: #fff;
+}
+
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.product p {
+    color: #666;
+    margin-bottom: 10px;
+    max-height: 4.5em;
+    line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product .price {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product button {
+    background-color: #E67D01;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #be6a0a;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main {
+        margin-top: 20px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.favorite-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 105px;
+}

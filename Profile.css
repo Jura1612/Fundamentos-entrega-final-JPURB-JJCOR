@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    width: 50%;
+    background: linear-gradient(45deg, #f28c00, #1a1a4b, #7d7da8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-panel {
+    width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.right-panel h1 {
+    color: #f28c00;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #7d7da8;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #1a1a4b;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.form-group input::placeholder {
+    color: #7d7da8;
+}
+
+.form-group .profile-pic {
+    display: flex;
+    align-items: center;
+}
+
+.form-group .profile-pic img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.form-group .profile-pic button {
+    background-color: #f28c00;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form-group .profile-pic button:hover {
+    background-color: #d77a00;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 450px;
+}
+
+   
+    .buttons button {
+        width: 48%;
+        padding: 8px; 
+        border: 3px solid #f28c00; 
+        border-radius: 30px;
+        font-size: 1em; 
+        cursor: pointer;
+    }
+    .buttons .reset {
+        background-color: #ffffff;
+        color: #f28c00;
+    }
+    .buttons .reset:hover {
+        background-color: #f28c00;
+        color: #ffffff;
+    }
+    .buttons .save {
+        background-color: #f28c00;
+        color: #ffffff;
+        border: 3px solid #f28c00; 
+    }
+    .buttons .save:hover {
+        background-color: #d77a00;
+    }
+    .logout-btn {
+        padding: 12px 25px;
+        background-color:transparent;
+        color: #ffffff;
+        -webkit-text-stroke-color: #f28c00;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .logout-btn:hover {
+        background-color: #d77a00;
+    }
+    

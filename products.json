@@ -1,0 +1,82 @@
+[
+    {
+      "id": 0,
+      "name": "Jordan zoom",
+      "description": "Jordan zoom celebra el poder de la conexión con la cancha junto a tus compañeros.",
+      "price": 21,
+      "image": "https://raw.githubusercontent.com/jjcrse/Intento-2/refs/heads/main/Pagina%20web%20entregable%201/Layout/jordan%2Bzoom%2Bseparate.png",
+      "sizes": [38, 39, 40],
+      "colors": ["Black", "White", "Red"],
+      "type": ["Dunk", "High", "Dunklow"]
+    },
+    {
+      "name": "Voleyball Molten",
+      "description": "Cubierta: Cuero PUDiseño: 18 PanelesEstructura: Cosido a MaquinaCámara.",
+      "price": 95,
+      "image": "https://raw.githubusercontent.com/jjcrse/Entrega-1-pagina-web-/main/Layout/Asics%20Sky%20Elite%20Tokyo.jpeg.jpg",
+      "material": ["Plastic", "Leather"],
+      "colors": ["Yellow", "Black", "Blue"],
+      "type": ["Beach", "Voleyball", "Room"]
+    },
+    {
+      "name": "Asics Court FF 2 Clay",
+      "description": "Court FF ™ Novak celebra el poder del salto y de la mejor defensa.",
+      "price": 115,
+      "image": "https://raw.githubusercontent.com/jjcrse/Entrega-1-pagina-web-/main/Layout/Adidas%20Crazy%205.jpeg.jpg",
+      "sizes": [40, 41, 42],
+      "colors": ["Blue", "White", "Green"],
+      "position": ["Setter", "Middle Blocker", "Defensive specialist"]
+    },
+    {
+      "name": "ASICS GEL-ROCKET 11",
+      "description": "El GEL-ROCKET™ 11 es un CAMISILLA de pista polivalente que ofrece buena estabilidad.",
+      "price": 105,
+      "image": "https://raw.githubusercontent.com/jjcrse/Entrega-1-pagina-web-/main/Layout/Camisa%20Col%20azul.jpg",
+      "sizes": [40, 41, 42],
+      "colors": ["Black", "White", "Blue"],
+      "position": ["Setter", "Middle Blocker", "Defensive specialist"]
+    },
+    {
+      "name": "ASICS GEL-UPCOURT 5",
+      "description": "El Upcourt 5 es una Camisa de deporte ligera para las canchas mundiales Colombianas.",
+      "price": 105,
+      "image": "https://raw.githubusercontent.com/jjcrse/Entrega-1-pagina-web-/main/Layout/Camisa%20azul%20oscuro.jpg",
+      "sizes": [40, 41, 42],
+      "colors": ["Green", "White", "Gray"],
+      "material": ["Plastic", "Leather"]
+    },
+    {
+      "name": "Morral ASICs Fiel¨5",
+      "description": "Es una maleta que ofrece el mejor almacenamiento para partidos y entrenamientos.",
+      "price": 105,
+      "image": "https://raw.githubusercontent.com/jjcrse/Entrega-1-pagina-web-/main/Layout/Maletin%20Negro.jpg",
+      "sizes": [40, 41, 42],
+      "colors": ["Black", "White", "Blue"],
+      "position": ["Setter", "Middle Blocker", "Defensive specialist"]
+    },
+    {
+      "name": "Rodillera Multiuso M3000",
+      "description": "Rodillera Multiuso M3000 que ofrece la mejor protección para evitar lesiones.",
+      "price": 206,
+      "image": "https://raw.githubusercontent.com/jjcrse/Entrega-1-pagina-web-/main/Layout/Rodilleras.jpeg.jpg",
+      "sizes": ["M", "L", "XL"],
+      "colors": ["Blue", "Gray", "Black", "White"]
+    },
+    {
+      "name": "Camisilla Sel Colombia",
+      "description": "Camisilla emblemática de la selección Colombia, unisex, usada por los jugadores de la selección Colombiana de voleibol, para portar con orgullo la selección.",
+      "price": 123,
+      "image": "https://raw.githubusercontent.com/jjcrse/Entrega-1-pagina-web-/main/Layout/Sin%20mangas%20Col%20amarilla.jpg",
+      "sizes": ["S", "M", "L"],
+      "colors": ["Blue", "Red", "White", "Black"]
+    },
+    {
+      "name": "Balon Sel Colombia",
+      "description": "Balón de alta calidad que proporciona una mejor caída al resto.",
+      "price": 167,
+      "image": "https://raw.githubusercontent.com/jjcrse/Entrega-1-pagina-web-/main/Layout/Proyecto%20Quitar%20fondo%20(3).png",
+      "sizes": ["36", "37", "38", "39", "40", "41"],
+      "colors": ["Blue", "Red", "White", "Black", "Gray", "Yellow"]
+    }
+  ]
+  

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Kleos</title>
+    <link rel="stylesheet" href="Registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="left-content">
+                <h1> Te me haces <br> conocido</h1>
+                <p>Estoy en lo correcto? <a href="./Log in.html" class="button">Inicia sesión</a></p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-content">
+                <h2>Regístrate</h2>
+                <div class="social-login">
+                    <i class="icon fab fa-facebook-f"></i>
+                    <i class="icon fab fa-apple"></i>
+                    <i class="icon fab fa-google"></i>
+                </div>
+                <p>o regístrate con tu email</p>
+                <div class="input-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Ingresa tu email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Constraseña</label>
+                    <input type="password" id="password" placeholder="Ingresa tu contraseña">
+                </div>
+                
+                <p class="forgot-password">¿Olvidaste tu contraseña?</p>
+                <button class="login-button" onclick="register()">Registrarse</button>
+            </div>
+        </div>
+    </div>
+    <script src="./Registro.js"></script>
+</body>
+
+</html>
