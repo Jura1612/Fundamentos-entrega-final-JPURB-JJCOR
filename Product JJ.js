@@ -22,11 +22,19 @@ class Product {
                 <p>${this.description}</p>
                 <p class="price">${this.price}</p>
                 <button onclick="productSelected(${products.indexOf(this)})">Ver detalles</button>
-                
-                <!-- Icono de corazón -->
                 <span class="favorite-icon" onclick="toggleFavorite(${products.indexOf(this)})" 
                       style="color: ${this.isFavorited ? 'orange' : 'gray'};">❤</span>
             </div>
         `;
+    }
+}
+
+function productSelected(id) {
+    const selectedProduct = products.find(product => products.indexOf(product) === id);
+    if (selectedProduct) {
+        sessionStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
+        window.location.href = "./Producto.html"; 
+    } else {
+        console.error("Producto no encontrado");
     }
 }
