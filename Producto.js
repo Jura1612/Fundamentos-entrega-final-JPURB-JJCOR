@@ -10,14 +10,17 @@ if (selectedProduct) {
     document.querySelector('.right-column p').textContent = selectedProduct.description;
 
     document.querySelector('.price').textContent = `$${selectedProduct.price}`;
+
     const sizeSelection = document.querySelector('.size-selection');
-    sizeSelection.innerHTML = ''; // Limpia los botones previos
+    sizeSelection.innerHTML = ''; 
     selectedProduct.Sizes.forEach(size => {
         const button = document.createElement('button');
         button.textContent = size;
         sizeSelection.appendChild(button);
     });
 
+
+} else {
     console.error("No se encontró ningún producto seleccionado en sessionStorage.");
     document.body.innerHTML = "<h1>Error: Producto no encontrado.</h1>";
 }
