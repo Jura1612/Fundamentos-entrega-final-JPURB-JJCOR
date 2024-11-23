@@ -2,53 +2,57 @@ let products = [];
 
 async function parseDataToProducts() {
     const data = await fetchData();
+    
+
+    const savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
     for (let i = 0; i < data.length; i++) {
-        let item = data[i];
-        let product = new Product(
-            item.description,
-            item.price,
-            item.image,
-            item.sizes || [],
-            item.colors || [],
-            item.name
+        const product = new Product(
+            data[i].description,
+            data[i].price,
+            data[i].image,
+            data[i].Sizes,
+            data[i].Color,
+            data[i].name
         );
+
+        if (savedFavorites.includes(data[i].name)) {
+            product.isFavorited = true;
+        }
+
         products.push(product);
     }
+
+    renderProducts();
 }
 
-async function renderAllProducts() {
-    let container = document.getElementById("products");
-    container.innerHTML = ""; 
-    for (let i = 0; i < products.length; i++) {
-        let product = products[i];
-        container.innerHTML += `
- <div class="product">
-        <img src="${product.image}" alt="${product.name}">
-        <h3>${product.name}</h3>
-        <p>${product.description}</p>
-        <p class="price">${product.price}</p>
-        <!-- Botón con el ID del producto -->
-        <button onclick="productSelected(${product.id})">Ver detalles</button>
-        <span class="favorite-icon" onclick="toggleFavorite(${i})" 
-              style="color: ${product.isFavorited ? 'orange' : 'gray'};">❤</span>
-    </div>
-`;
+function renderProducts() {
+    const productGrid = document.getElementById('products');
+    productGrid.innerHTML = ''; 
+
+    products.forEach(product => {
+        productGrid.innerHTML += product.htmlCard();
+    });
+}
+
+function toggleFavorite(productId) {
+    const product = products[productId];
+
+    const isFavorited = product.toggleFavorite();
+
+    const productCard = document.querySelectorAll('.product')[productId];
+    const favoriteIcon = productCard.querySelector('.favorite-icon');
+    favoriteIcon.style.color = isFavorited ? 'orange' : 'gray';
+
+    let savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+    if (isFavorited) {
+        savedFavorites.push(product.name);
+    } else {
+        savedFavorites = savedFavorites.filter(favorite => favorite !== product.name);
     }
+
+    localStorage.setItem('favorites', JSON.stringify(savedFavorites));
 }
 
-
-
-renderAllProducts();
-
-async function renderAllProducts() {
-    let container = document.getElementById("products");
-    container.innerHTML = "<p>Cargando productos...</p>";
-
-    await parseDataToProducts(); 
-    container.innerHTML = ""; 
-    for (let i = 0; i < products.length; i++) {
-        let product = products[i];
-        container.innerHTML += product.htmlCard();
-    }
-}
+document.addEventListener('DOMContentLoaded', parseDataToProducts);
